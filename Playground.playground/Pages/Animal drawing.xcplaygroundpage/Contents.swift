@@ -57,6 +57,17 @@ canvas.drawAxes(withScale: true, by: 20, color: .black)
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
  
  */
+
+
+
+//add gradient sky
+canvas.fillColor = Color(hue: 180, saturation: 85, brightness: 80, alpha: 100)
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 300, height: 300)
+  
+//add ground
+canvas.fillColor = Color(hue: 100, saturation: 181, brightness: 58, alpha: 100)
+    canvas.drawRectangle(at: Point(x:0 , y: -300), width: 300, height: 300)
+    
 //add rabbit body
 canvas.drawShapesWithFill = true
 let lightGrey = Color(hue: 210, saturation: 22, brightness: 56, alpha: 100)
@@ -133,6 +144,11 @@ canvas.drawEllipse(at: Point(x: 224, y: -196), width: 6, height: 40)
 
 canvas.fillColor = .orange
 canvas.drawEllipse(at: Point(x: 150, y: -250), width: 10, height: 60)
+canvas.fillColor = .green
+canvas.drawEllipse(at: Point(x: 150, y: -210), width: 5, height: 30)
+canvas.drawEllipse(at: Point(x: 146, y: -208), width: 4, height: 40)
+canvas.drawEllipse(at: Point(x: 153, y: -213), width: 6, height: 40)
+
 
 
 /*:
