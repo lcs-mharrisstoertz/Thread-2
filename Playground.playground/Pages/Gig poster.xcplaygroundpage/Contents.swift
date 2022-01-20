@@ -1,6 +1,6 @@
 //: [Previous](@previous) / [Next](@next)
 /*:
-## Canvas size
+ ## Canvas size
  
  Set the size of your desired canvas by adjusting the constants on lines 7 and 8.
  */
@@ -50,9 +50,9 @@ canvas.drawAxes(withScale: true, by: 50, color: .black)
  ## Add your code
  
  Beginning on line 61, you can add your own code.
-  
+ 
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
-
+ 
  */
 //add background
 canvas.fillColor = Color(hue: 193, saturation: 99, brightness: 86, alpha: 80)
@@ -61,6 +61,21 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 // draw white circles
 
 
+canvas.fillColor = .white
+canvas.drawEllipse(at: Point(x: 200, y: 400), width: 20, height: 20, borderWidth: 10)
+
+canvas.borderColor = .white
+
+canvas.drawShapesWithFill = false
+canvas.drawShapesWithBorders = true
+
+
+
+for size in stride(from: 200, through: 400, by: 30) {
+    
+    canvas.drawEllipse(at: Point(x: 200, y: 400), width: size, height: size , borderWidth: 10)
+}
+
 /*:
  ## Show the Live View
  Don't see any results?
@@ -68,7 +83,7 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
  Remember to show the Live View (1 then 2):
  
  ![timeline](timeline.png "Timeline")
-
+ 
  ## Use source control
  To keep your work organized, receive feedback, and earn a high grade in this course, regular use of source control is a must.
  
@@ -76,3 +91,4 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
  
  ![source_control](source-control.png "Source Control")
  */
+
