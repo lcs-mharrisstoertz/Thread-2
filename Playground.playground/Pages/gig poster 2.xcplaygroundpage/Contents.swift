@@ -14,6 +14,7 @@ let preferredHeight = 600
  Please do not remove.
  */
 import Cocoa
+
 import PlaygroundSupport
 import CanvasGraphics
 
