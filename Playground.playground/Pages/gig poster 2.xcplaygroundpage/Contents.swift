@@ -64,14 +64,30 @@ canvas.drawRectangle(at: Point (x: 0, y: 0), width: 400, height: 400)
 
 //draw circles
 canvas.fillColor = Color(hue: 107, saturation: 63, brightness: 73, alpha: 100)
-for horizontalPosition in stride (from: -25, through: 400, by: 40){
-    
-    for verticlePosition in stride (from: -25, through: 400, by: 40){
+
+
+for xPosition in stride(from: 0, through: 400, by: 40) {
+    for yPosition in stride(from: 0, through: 400, by: 40) {
         
-        canvas.drawEllipse(at: Point(x: horizontalPosition + 25, y: verticlePosition + 25), width: 37, height: 37)
+        // conditional change
+        if xPosition + yPosition <= 400
+        && xPosition > 0
+            && yPosition > 0 {
+            canvas.fillColor = .white
+          
+                canvas.fillColor = .white
+        } else {
+            canvas.fillColor = Color(hue: 107, saturation: 63, brightness: 73, alpha: 100)
+        }
+        
+        // Draw the circle
+        canvas.drawEllipse(at: Point(x: xPosition,
+                                     y: yPosition),
+                           width: 36, height: 36)
+    
     }
-    
-    
+}
+
     
     //add text
     canvas.textColor = .black
@@ -91,13 +107,8 @@ for horizontalPosition in stride (from: -25, through: 400, by: 40){
     canvas.drawText(message: "thowing muses", at: Point (x: 275, y: 440), size: 13)
     canvas.drawText(message: "big dipper", at: Point (x: 275, y: 425), size: 13)
     
-    
-    
- 
-    
-    
-    
-}
+
+
 
 /*:
  ## Show the Live View
