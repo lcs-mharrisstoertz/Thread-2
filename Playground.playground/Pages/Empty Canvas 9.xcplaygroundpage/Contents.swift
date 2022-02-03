@@ -59,16 +59,31 @@ for xPosition in stride(from: 0, to: 400, by: 100) {
         
         
         var figureVertices: [Point] = []
-        figureVertices.append(Point(x: xPosition + 50, y: yPosition + 20)) //A
-        figureVertices.append(Point(x: xPosition + 30, y: yPosition + 50))
-        figureVertices.append(Point(x: xPosition + 35, y: yPosition + 60))
-        figureVertices.append(Point(x: xPosition + 45, y: yPosition + 60))
-        figureVertices.append(Point(x: xPosition + 50, y: yPosition + 50))
-        
-        figureVertices.append(Point(x: xPosition + 55, y: yPosition + 60))
-        figureVertices.append(Point(x: xPosition + 65, y: yPosition + 60))
-        figureVertices.append(Point(x: xPosition + 70, y: yPosition + 50))
-        figureVertices.append(Point(x: xPosition + 50, y: yPosition + 20))
+        // first half
+        figureVertices.append(Point(x: xPosition + 48, y: yPosition + 8))
+        figureVertices.append(Point(x: xPosition + 8, y: yPosition + 48))
+        figureVertices.append(Point(x: xPosition + 4 , y: yPosition + 60))
+        figureVertices.append(Point(x: xPosition + 2 , y: yPosition + 68))
+        figureVertices.append(Point(x: xPosition + 4 , y: yPosition + 76))
+        figureVertices.append(Point(x: xPosition + 8 , y: yPosition + 84))
+        figureVertices.append(Point(x: xPosition + 12 , y: yPosition + 92))
+        figureVertices.append(Point(x: xPosition + 24 , y: yPosition + 92))
+        figureVertices.append(Point(x: xPosition + 32 , y: yPosition + 88))
+        figureVertices.append(Point(x: xPosition + 44 , y: yPosition + 78))
+
+
+        // second half
+        figureVertices.append(Point(x: xPosition + 56 , y: yPosition + 88))
+        figureVertices.append(Point(x: xPosition + 60 , y: yPosition + 100))
+        figureVertices.append(Point(x: xPosition + 72 , y: yPosition + 100))
+        figureVertices.append(Point(x: xPosition + 84 , y: yPosition + 92))
+        figureVertices.append(Point(x: xPosition + 88 , y: yPosition + 84))
+        figureVertices.append(Point(x: xPosition + 90 , y: yPosition + 68))
+        figureVertices.append(Point(x: xPosition + 86 , y: yPosition + 56))
+        figureVertices.append(Point(x: xPosition + 48, y: yPosition + 8))
+
+
+
         
         // Draw the custom figure
         canvas.drawCustomShape(with: figureVertices)
