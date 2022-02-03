@@ -1,6 +1,6 @@
 //: [Previous](@previous) / [Next](@next)
 /*:
-## Canvas size
+ ## Canvas size
  
  Set the size of your desired canvas by adjusting the constants on lines 7 and 8.
  */
@@ -50,9 +50,9 @@ canvas.drawAxes(withScale: true, by: 50, color: .black)
  ## Add your code
  
  Beginning on line 61, you can add your own code.
-  
+ 
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
-
+ 
  */
 
 let orangeyRed = Color(hue: 17, saturation: 95, brightness: 95, alpha: 100)
@@ -62,27 +62,27 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 canvas.fillColor = Color(hue: 49, saturation: 100, brightness: 100, alpha: 100)
 
 for xPosition in stride(from: 0, to: 400, by: 45) {
-for yPosition in stride(from: 0, to: 400, by: 45) {
-
-    // conditional change
-    if xPosition - yPosition <= -25
-    {
-   
-        canvas.fillColor = Color(hue: 79, saturation: 5, brightness: 88, alpha: 100)
-      
-    } else {
-        canvas.fillColor = Color(hue: 49, saturation: 100, brightness: 100, alpha: 100)
+    for yPosition in stride(from: 0, to: 400, by: 45) {
         
-    }
+        // conditional change
+        if xPosition - yPosition <= -25
+        {
+            
+            canvas.fillColor = Color(hue: 79, saturation: 5, brightness: 88, alpha: 100)
+            
+        } else {
+            canvas.fillColor = Color(hue: 49, saturation: 100, brightness: 100, alpha: 100)
+            
+        }
         // Express the vertices of the custom figure
-
-var figureVertices: [Point] = []
-figureVertices.append(Point(x: xPosition + 0, y: yPosition + 200))
-figureVertices.append(Point(x: xPosition + 45, y: yPosition + 200))
-figureVertices.append(Point(x: xPosition + 45, y: yPosition + 245))
-
-// Draw the custom figure
-canvas.drawCustomShape(with: figureVertices)
+        
+        var figureVertices: [Point] = []
+        figureVertices.append(Point(x: xPosition + 0, y: yPosition + 200))
+        figureVertices.append(Point(x: xPosition + 45, y: yPosition + 200))
+        figureVertices.append(Point(x: xPosition + 45, y: yPosition + 245))
+        
+        // Draw the custom figure
+        canvas.drawCustomShape(with: figureVertices)
     }}
 
 
@@ -95,7 +95,7 @@ canvas.drawAxes(withScale: true, by: 50, color: .black)
  Remember to show the Live View (1 then 2):
  
  ![timeline](timeline.png "Timeline")
-
+ 
  ## Use source control
  To keep your work organized, receive feedback, and earn a high grade in this course, regular use of source control is a must.
  
