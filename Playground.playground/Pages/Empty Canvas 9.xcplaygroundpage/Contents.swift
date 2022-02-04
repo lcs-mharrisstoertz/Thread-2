@@ -139,13 +139,13 @@ canvas.drawRoundedRectangle(at: Point(x: 46, y: 475), width: 2, height: 15)
 canvas.drawRoundedRectangle(at: Point(x: 50, y: 475), width: 2, height: 15)
 
 // butterfly 3
-canvas.drawEllipse(at: Point(x: 350, y: 85), width: 10, height: 35)
-canvas.drawEllipse(at: Point(x: 340, y: 90), width: 15, height: 15)
-canvas.drawEllipse(at: Point(x: 340, y: 75), width: 18, height: 18)
-canvas.drawEllipse(at: Point(x: 360, y: 90), width: 15, height: 15)
-canvas.drawEllipse(at: Point(x: 360, y: 75), width: 18, height: 18)
-canvas.drawRoundedRectangle(at: Point(x: 346, y: 95), width: 2, height: 15)
-canvas.drawRoundedRectangle(at: Point(x: 350, y: 95), width: 2, height: 15)
+canvas.drawEllipse(at: Point(x: 350, y: 555), width: 10, height: 35)
+canvas.drawEllipse(at: Point(x: 340, y: 560), width: 15, height: 15)
+canvas.drawEllipse(at: Point(x: 340, y: 545), width: 18, height: 18)
+canvas.drawEllipse(at: Point(x: 360, y: 560), width: 15, height: 15)
+canvas.drawEllipse(at: Point(x: 360, y: 545), width: 18, height: 18)
+canvas.drawRoundedRectangle(at: Point(x: 346, y: 565), width: 2, height: 15)
+canvas.drawRoundedRectangle(at: Point(x: 350, y: 565), width: 2, height: 15)
 /*:
  ## Show the Live View
  Don't see any results?
