@@ -50,7 +50,6 @@ PlaygroundPage.current.liveView = canvas
  */
 canvas.drawAxes(withScale: true, by: 50, color: .black)
 
-canvas.fillColor = Color(hue: 320, saturation: 85, brightness: 100, alpha: 100)
 
 for xPosition in stride(from: 0, to: 400, by: 100) {
     for yPosition in stride(from: 60, to: 400, by: 100) {
@@ -74,42 +73,33 @@ for xPosition in stride(from: 0, to: 400, by: 100) {
         figureVertices.append(Point(x: xPosition + 50, y: yPosition + 20))
 
 
-
-        
-        // Draw the custom figure
+        canvas.fillColor = Color(hue: 321, saturation: 90, brightness: 100, alpha: 100)
         canvas.drawCustomShape(with: figureVertices)
-    }}
-
-canvas.fillColor = Color(hue: 320, saturation: 40, brightness: 100, alpha: 100)
-for xPosition in stride(from: 0, to: 400, by: 100) {
-    for yPosition in stride(from: 60, to: 400, by: 100) {
- 
-        //hearts
         
-        
-        var figureVertices: [Point] = []
+        figureVertices = []
       //first half
-        figureVertices.append(Point(x: xPosition + 50*Int(0.9), y: yPosition + 20*Int(0.9)))
-        figureVertices.append(Point(x: xPosition + 20*Int(0.9), y: yPosition + 60*Int(0.9)))
-        figureVertices.append(Point(x: xPosition + 20*Int(0.9), y: yPosition + 70*Int(0.9)))
-        figureVertices.append(Point(x: xPosition + 30*Int(0.9), y: yPosition + 80*Int(0.9)))
-        figureVertices.append(Point(x: xPosition + 40*Int(0.9), y: yPosition + 80*Int(0.9)))
-        figureVertices.append(Point(x: xPosition + 50*Int(0.9), y: yPosition + 70*Int(0.9)))
+        figureVertices.append(Point(x: xPosition + 50, y: yPosition + 30))
+        figureVertices.append(Point(x: xPosition + 30, y: yPosition + 60))
+        figureVertices.append(Point(x: xPosition + 35, y: yPosition + 70))
+        figureVertices.append(Point(x: xPosition + 45, y: yPosition + 70))
+        figureVertices.append(Point(x: xPosition + 50, y: yPosition + 60))
+    
         // second half
-        figureVertices.append(Point(x: xPosition + 60*Int(0.9), y: yPosition + 80*Int(0.9)))
-        figureVertices.append(Point(x: xPosition + 70*Int(0.9), y: yPosition + 80*Int(0.9)))
-        figureVertices.append(Point(x: xPosition + 80*Int(0.9), y: yPosition + 70*Int(0.9)))
-        figureVertices.append(Point(x: xPosition + 80*Int(0.9), y: yPosition + 60*Int(0.9)))
-        figureVertices.append(Point(x: xPosition + 50*Int(0.9), y: yPosition + 20*Int(0.9)))
+        figureVertices.append(Point(x: xPosition + 55, y: yPosition + 70))
+        figureVertices.append(Point(x: xPosition + 65, y: yPosition + 70))
+        figureVertices.append(Point(x: xPosition + 70, y: yPosition + 60))
+        figureVertices.append(Point(x: xPosition + 50, y: yPosition + 30))
 
 
 
         
         // Draw the custom figure
+        canvas.fillColor = Color(hue: 330, saturation: 55, brightness: 100, alpha: 100)
         canvas.drawCustomShape(with: figureVertices)
+        
     }}
 
-// Draw the custom figure
+// add text
 /*:
  ## Show the Live View
  Don't see any results?
