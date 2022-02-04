@@ -58,13 +58,13 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 for xPosition in stride(from: 40, to: 320, by: 80) {
     for yPosition in stride(from: 100, to: 400, by: 80) {
- 
-      
-            
+        
+        
+        
         //FIRST HEART
         
         var figureVertices: [Point] = []
-      //first half
+        //first half
         figureVertices.append(Point(x: xPosition + 50, y: yPosition + 20))
         figureVertices.append(Point(x: xPosition + 20, y: yPosition + 60))
         figureVertices.append(Point(x: xPosition + 20, y: yPosition + 70))
@@ -77,30 +77,30 @@ for xPosition in stride(from: 40, to: 320, by: 80) {
         figureVertices.append(Point(x: xPosition + 80, y: yPosition + 70))
         figureVertices.append(Point(x: xPosition + 80, y: yPosition + 60))
         figureVertices.append(Point(x: xPosition + 50, y: yPosition + 20))
-
-
+        
+        
         canvas.fillColor = Color(hue: 321, saturation: 90, brightness: 100, alpha: 100)
         canvas.drawCustomShape(with: figureVertices)
-    
+        
         // SECOND HEART
         figureVertices = []
-      //first half
+        //first half
         figureVertices.append(Point(x: xPosition + 50, y: yPosition + 30))
         figureVertices.append(Point(x: xPosition + 30, y: yPosition + 60))
         figureVertices.append(Point(x: xPosition + 35, y: yPosition + 70))
         figureVertices.append(Point(x: xPosition + 45, y: yPosition + 70))
         figureVertices.append(Point(x: xPosition + 50, y: yPosition + 60))
-    
+        
         // second half
         figureVertices.append(Point(x: xPosition + 55, y: yPosition + 70))
         figureVertices.append(Point(x: xPosition + 65, y: yPosition + 70))
         figureVertices.append(Point(x: xPosition + 70, y: yPosition + 60))
         figureVertices.append(Point(x: xPosition + 50, y: yPosition + 30))
-
-
-
         
-       
+        
+        
+        
+        
         
         // conditional change
         if xPosition - yPosition <= -100
@@ -115,12 +115,12 @@ for xPosition in stride(from: 40, to: 320, by: 80) {
             
         }
         
-    
+        
         
         // Draw the custom figure
         canvas.drawCustomShape(with: figureVertices)
         
-        }}
+    }}
 
 // add text
 
