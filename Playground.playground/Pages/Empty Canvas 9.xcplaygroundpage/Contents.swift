@@ -59,6 +59,8 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 for xPosition in stride(from: 40, to: 320, by: 80) {
     for yPosition in stride(from: 100, to: 400, by: 80) {
  
+      
+            
         //FIRST HEART
         
         var figureVertices: [Point] = []
@@ -98,11 +100,27 @@ for xPosition in stride(from: 40, to: 320, by: 80) {
 
 
         
+       
+        
+        // conditional change
+        if xPosition - yPosition <= -100
+            || xPosition - yPosition >= 0
+        {
+            
+            canvas.fillColor = Color(hue: 330, saturation: 55, brightness: 100, alpha: 100)
+            
+            
+        } else {
+            canvas.fillColor = Color(hue: 285, saturation: 38, brightness: 100, alpha: 100)
+            
+        }
+        
+    
+        
         // Draw the custom figure
-        canvas.fillColor = Color(hue: 330, saturation: 55, brightness: 100, alpha: 100)
         canvas.drawCustomShape(with: figureVertices)
         
-    }}
+        }}
 
 // add text
 
