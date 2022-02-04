@@ -122,6 +122,8 @@ for xPosition in stride(from: 40, to: 320, by: 80) {
         
     }}
 
+
+
 // add text
 
 canvas.textColor = .black
@@ -135,6 +137,8 @@ canvas.drawText(message: "AMSTERDAM, NORTH HOLLAND", at: Point(x: 50, y: 25), si
 canvas.textColor = Color(hue: 320, saturation: 40, brightness: 100, alpha: 100)
 canvas.drawText(message: "NIKI MINAJ", at: Point(x: 45, y: 525), size: 50)
 canvas.drawText(message: "PINK FRIDAY", at: Point(x: 45, y: 475), size: 50)
+
+
 
 // butterflies
 canvas.fillColor = .black
